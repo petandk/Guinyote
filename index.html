@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./lib/javascript.js" defer></script>
+    <link rel="stylesheet" href="./public/style/style.css" />
+    <title>Guiñote</title>
+  </head>
+  <body>
+    <div id="mainScreen">
+      <div id="welcome">Haz click en la baraja para empezar.</div>
+      <div id="deck" class="card"></div>
+      <div id="mainSuit" class="centerImage"></div>
+      <div id="computer1" class="hand"></div>
+      <div id="computer2" class="hand"></div>
+      <div id="computer3" class="hand"></div>
+      <div id="player"></div>
+      <div id="playingArea">
+        <span id="playedCard1" class="playedCard centerImage"></span>
+        <span id="playedCard2" class="playedCard centerImage"></span>
+        <span id="playedCard3" class="playedCard centerImage"></span>
+        <span id="playedCard4" class="playedCard centerImage"></span>
+      </div>
+      <div id="menu">
+        <button id="cantar" class="button hidden">cantar</button>
+        <button id="switch7" class="button hidden">cambiar 7</button>
+        <button id="customize" class="button hidden">
+          personalizar baraja
+        </button>
+      </div>
+    </div>
+    <div id="configPopup">
+      <h2>Selecciona un reverso:</h2>
+      <div id="allDeckBacks">
+        <div id="crosses" class="backPreview crosses"></div>
+        <div id="diamonds" class="backPreview diamonds"></div>
+        <div id="leaves" class="backPreview leaves"></div>
+        <div id="mexican" class="backPreview mexican"></div>
+        <div id="waves" class="backPreview waves"></div>
+        <div id="nayar" class="backPreview nayar centerImage"></div>
+      </div>
+
+      <h2>Selecciona un frontal:</h2>
+      <div id="allDeckFronts">
+        <div id="spanish" class="frontPreview spanish centerImage"></div>
+        <div id="colorful" class="frontPreview colorful centerImage"></div>
+        <div
+          id="alternative"
+          class="frontPreview alternative centerImage"
+        ></div>
+        <div id="poker" class="frontPreview poker centerImage"></div>
+      </div>
+      <h2>Vista previa:</h2>
+      <div id="preview">
+        <span id="previewBack" class="card"></span>
+        <span id="previewFront" class="card centerImage"></span>
+      </div>
+      <div id="buttonDiv">
+        <button id="previewButton" class="button hidden">aceptar</button>
+      </div>
+    </div>
+  </body>
+</html>

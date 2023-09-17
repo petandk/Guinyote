@@ -1,0 +1,230 @@
+:root {
+  --card-width: 6vw;
+  --card-height: calc(var(--card-width) * 1.397);
+  --hand-width: calc(var(--card-width) * 7);
+  --hand-height: calc(var(--card-height) * 1.05);
+  --border-color: #48c9b0;
+  --back-deck-image: url(../images/back/mexican.svg);
+  --deck-front-folder: "../images/front/espanyola/";
+  --player-increase-factor: 1.5;
+}
+
+body {
+  background-color: green;
+  overflow: hidden;
+  color: white;
+  font-family: Verdana, sans-serif;
+}
+#welcome {
+  font-weight: bold;
+  color: white;
+  font-size: 0.9vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+#mainScreen,
+#deck,
+#mainSuit,
+#computer1,
+#computer2,
+#computer3,
+#player,
+#playingArea,
+#menu {
+  z-index: -1;
+}
+#deck {
+  position: absolute;
+  top: 35vh;
+  left: 40vw;
+}
+#mainSuit {
+  rotate: 90deg;
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 1.2em;
+  display: inline-block;
+  margin-right: 0.25vw;
+  position: absolute;
+  top: 36.5vh;
+  left: 43vw;
+  z-index: -9999;
+}
+#mainSuitCard {
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 1.2em;
+  border: 0.3em var(--border-color) solid;
+  display: inline-block;
+  margin-right: 0.25vw;
+  background-image: var(--back-deck-image);
+}
+.hidden {
+  visibility: hidden;
+}
+
+.hand {
+  width: var(--hand-width);
+  height: var(--hand-height);
+  position: absolute;
+}
+#computer1 {
+  rotate: 90deg;
+  left: -18vw;
+  top: 40vh;
+}
+#computer2 {
+  rotate: 180deg;
+  left: 30vw;
+  top: -5vh;
+}
+#computer3 {
+  rotate: -90deg;
+  right: -18vw;
+  top: 40vh;
+}
+#player {
+  width: calc((var(--hand-width) * var(--player-increase-factor)) * 1.2);
+  height: calc(var(--hand-height) * var(--player-increase-factor));
+  position: absolute;
+  left: 25vw;
+  bottom: 8vh;
+}
+.playerCard {
+  width: calc(var(--card-width) * var(--player-increase-factor));
+  height: calc(var(--card-height) * var(--player-increase-factor));
+  border-radius: 1.2em;
+  border: 0.3em var(--border-color) solid;
+  display: inline-block;
+  margin-right: 0.25vw;
+}
+
+.playedCard {
+  display: block;
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 0.8em;
+  position: absolute;
+}
+.border {
+  border: 0.3em var(--border-color) solid;
+}
+#playedCard1 {
+  top: 32vh;
+  left: 60vw;
+}
+#playedCard2 {
+  top: 20vh;
+  left: 67vw;
+}
+#playedCard3 {
+  top: 32vh;
+  left: 74vw;
+}
+#playedCard4 {
+  top: 44vh;
+  left: 67vw;
+}
+#menu {
+  position: absolute;
+  bottom: 2vh;
+  left: 30vw;
+}
+.button {
+  margin-left: 1em;
+  border: 0.3em var(--border-color) solid;
+  border-radius: 1.2em;
+  width: 10vw;
+  height: 5vh;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9vw;
+  background-color: hsla(358, 100%, 67.5%, 1);
+}
+#configPopup {
+  z-index: 100;
+  display: none;
+  background-color: green;
+  width: 100vw;
+  height: 98vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 2vh;
+  border: none;
+}
+
+#allDeckBacks,
+#allDeckFronts,
+#preview,
+#buttonDiv,
+#configPopup h2 {
+  display: flex;
+  justify-content: center;
+}
+.backPreview,
+.frontPreview {
+  width: calc((var(--card-width) * var(--player-increase-factor)));
+  height: calc(var(--card-height) * var(--player-increase-factor));
+  border-radius: 1.2em;
+  border: 0.3em var(--border-color) solid;
+  display: inline-block;
+  margin-right: 0.25vw;
+}
+#previewBack,
+#previewFront {
+  width: calc((var(--card-width) * var(--player-increase-factor)));
+  height: calc(var(--card-height) * var(--player-increase-factor));
+}
+#previewBack {
+  background-image: url(../images/back/mexican.svg);
+}
+#previewFront {
+  background-image: url(../images/front/spanish/oros1.png);
+  background-size: cover;
+  background-position: center;
+}
+#previewButton {
+  margin-top: 3vh;
+}
+.centerImage {
+  background-size: cover;
+  background-position: center;
+}
+.crosses {
+  background-image: url(../images/back/crossesNsquares.svg);
+}
+.diamonds {
+  background-image: url(../images/back/diamonds.svg);
+}
+.leaves {
+  background-image: url(../images/back/hojas.svg);
+}
+.mexican {
+  background-image: url(../images/back/mexican.svg);
+}
+.waves {
+  background-image: url(../images/back/olas.svg);
+}
+.nayar {
+  background-image: url(../images/back/nayar.svg);
+}
+.spanish {
+  background-image: url(../images/front/spanish/oros1.png);
+}
+.colorful {
+  background-image: url(../images/front/colorful/oros1.png);
+}
+.alternative {
+  background-image: url(../images/front/alternative/oros1.png);
+}
+.poker {
+  background-image: url(../images/front/poker/oros1.png);
+}
