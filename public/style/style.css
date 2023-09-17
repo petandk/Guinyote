@@ -18,7 +18,7 @@ body {
 #welcome {
   font-weight: bold;
   color: white;
-  font-size: 0.9vw;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   margin-top: 30vh;
@@ -197,6 +197,29 @@ body {
 .centerImage {
   background-size: cover;
   background-position: center;
+}
+#cantarText {
+  font-size: 2vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+}
+#matchPoints {
+  font-size: 2vh;
+  z-index: 100;
+  background-color: green;
+  width: 100vw;
+  height: 98vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 40vh;
+  padding-left: 40vw;
+  border: none;
+}
+#matchPoints > * {
+  margin-bottom: 3vh;
 }
 .crosses {
   background-image: url(../images/back/crossesNsquares.svg);
