@@ -26,7 +26,6 @@ The game uses ES modules, so it needs to be served over HTTP; opening `index.htm
 ```bash
 git clone https://github.com/petandk/Guinyote.git
 cd Guinyote
-git checkout master
 python3 -m http.server 8000
 ```
 
