@@ -1,4 +1,4 @@
-# Guiñote
+# Guinyote
 
 A browser version of **guiñote**, the Spanish trick-taking card game, built as an MVP for a hackathon organised by **Nayar Systems** (September 2023), where it won **2nd place**.
 
