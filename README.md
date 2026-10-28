@@ -4,6 +4,8 @@ A browser version of **guiñote**, the Spanish trick-taking card game, built as 
 
 It is written in plain JavaScript (ES modules), HTML and CSS, with no frameworks or dependencies.
 
+**▶ Play it online: <https://rmanzanas.com/Guinyote/>**
+
 > **Status: hackathon MVP.** The game is playable from deal to game over, but the code was written against the clock and has not been refactored since. See [Known limitations](#known-limitations).
 
 ## Features
