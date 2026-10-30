@@ -55,7 +55,3 @@ This is a hackathon MVP, so:
 - **Some rule edge cases** in the arrastre validation are not fully correct.
 - **No automated tests.**
 - **Interface text is in Spanish only.**
-
-## Author
-
-Raúl Manzanas Trillo · [rmanzanas.com](https://rmanzanas.com) · [GitHub](https://github.com/petandk)
